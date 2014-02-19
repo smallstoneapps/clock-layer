@@ -11,7 +11,7 @@ static ClockLayer* clock;
 
 static void window_load(Window* window) {
   clock = clock_layer_create(GRect(0, 0, 144, 32));
-  clock_layer_set_time_format(clock, "%h:%m");
+  clock_layer_set_time_format(clock, "%H:%M");
   clock_layer_add_to_window(clock, window);
   clock_layer_update(clock);
 }
