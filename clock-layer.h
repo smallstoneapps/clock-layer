@@ -13,7 +13,6 @@ typedef struct ClockLayer ClockLayer;
 ClockLayer* clock_layer_create(GRect rect);
 void clock_layer_destroy(ClockLayer* clock_layer);
 void clock_layer_set_time_format(ClockLayer* clock_layer, char* format);
-void clock_layer_set_text_color(ClockLayer* clock_layer, GColor color);
 TextLayer* clock_layer_get_text_layer(ClockLayer* clock_layer);
 void clock_layer_update(ClockLayer* clock_layer);
 void clock_layer_set_time(ClockLayer* clock_layer, struct tm* time);
