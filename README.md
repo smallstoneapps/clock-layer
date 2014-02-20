@@ -19,7 +19,6 @@ static void window_load(Window* window) {
 static void tick_handler(struct tm* tick_time, TimeUnits units_changed) {
   clock_layer_set_time(tick_time);
 }
-
 ````
 
 ## Function Documentation
@@ -54,29 +53,29 @@ Update the ClockLayer to a given time.
 
 Add the ClockLayer to a window.
 
-    clock_layer_add_to_window(ClockLayer* layer, Window* window);
+    void clock_layer_add_to_window(ClockLayer* layer, Window* window);
 
 Set the text colour for the ClockLayer.
 
-    clock_layer_set_text_color(ClockLayer* layer, GColor color);
+    void clock_layer_set_text_color(ClockLayer* layer, GColor color);
 
 Set the background colour for the ClockLayer.
 
-    clock_layer_set_background_color(ClockLayer* layer, GColor color);
+    void clock_layer_set_background_color(ClockLayer* layer, GColor color);
 
 Set the font for the ClockLayer.
 
-    clock_layer_set_font(ClockLayer* layer, GFont* font);
+    void clock_layer_set_font(ClockLayer* layer, GFont* font);
 
 Set the text alignment for the ClockLayer.
 
-    clock_layer_set_text_alignment(ClockLayer* layer, GTextAlignment alignment);
+    void clock_layer_set_text_alignment(ClockLayer* layer, GTextAlignment alignment);
 
 Get the Layer for the ClockLayer.
 
-    clock_layer_get_layer(ClockLayer* layer);
+    Layer* clock_layer_get_layer(ClockLayer* layer);
 
 Set the font for the ClockLayer to a system font.
 
-    clock_layer_set_system_font(ClockLayer* layer, const char* font_key);
+    void clock_layer_set_system_font(ClockLayer* layer, const char* font_key);
 
